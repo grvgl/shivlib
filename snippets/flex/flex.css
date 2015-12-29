@@ -1,0 +1,73 @@
+/* 
+ # Flex - CSS 3 Property
+ * align-content : <flex-start | flex-end | center | space-around | space-between | stretch>;
+ * align-items : <flex-start | flex-end | center | baseline | stretch>;
+ * align-self : <auto | flex-start | flex-end | stretch | baseline >;
+ * display: flex;
+ * flex-basis : <length | auto>;
+ * flex-direction : <row | column | row-reverse | column-reverse>;
+ * flex-grow : <integer Value>;
+ * flex-shrink : <integer value>;
+ * flex-wrap : <wrap | no-wrap | wrap-reverse>;
+ * jutsify-content: <flex-start | flex-end | center | space-around | space-between>;
+ * order : <integer Value>;
+ #shorthand properties
+ * flex-flow : <flex-wrap> <flex-direction>;
+ * flex: <flex-grow> <flex-shrink> <flex-basis>;
+*/
+
+*{
+ margin:0;
+ padding:0;
+}
+ul{
+ display: flex;
+ justify-content: center; 
+ list-style: none;
+ border: 1px solid #0c0;
+ padding: 5px;
+}
+.flex{
+ display:flex;
+}
+.flexStart, .flexStart ul{
+ justify-content: flex-start;  
+}
+.flexEnd, .flexEnd ul{
+ justify-content: flex-end; 	
+}
+.flexCenter, .flexCenter ul{
+ justify-content: center; 	
+}
+.flexSpaceAround, .flexSpaceAround ul{
+ justify-content: space-around; 	
+}
+.flexSpaceBetween, .flexSpaceBetween ul{
+ justify-content: space-between; 	
+}
+ul li{
+ text-align: center;
+ line-height: 25px;
+ padding:2px 50px;
+ margin:1px;
+ background: #0c0;
+}
+.flexSpaceBetween ul li{
+ text-align: center;
+ line-height: 25px;
+ padding: 5px 10px;
+ background: #0c0;
+ flex-grow:1;
+}
+.flexGrow0{
+ flex-grow:0;
+}
+.flexGrow1{
+ flex-grow:1;
+}
+.flexGrow2{
+ flex-grow:2;
+}
+.flexGrow3{
+ flex-grow:3;
+}
